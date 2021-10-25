@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <span class="header__title"> Todo app </span>
+        <span class="header__actions">
+          <button class="button header__button button--completed">
+            Show completed
+          </button>
+          <button class="button header__button button--clear">Clear all</button>
+        </span>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__container container">
+        <div class="grid">
+          <div class="card card--main">
+            <div class="card__header">
+              <span class="card__title">Create new category</span>
+            </div>
+            <div class="card__body">
+              <form class="card__form card__form--category">
+                <input
+                  type="text"
+                  class="card__control card__control--category"
+                  placeholder="Category name"
+                />
+                <input
+                  type="submit"
+                  value="Add"
+                  class="card__submit button card__button button--submit"
+                />
+              </form>
+            </div>
+          </div>
+          <div class="card-grid"></div>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
